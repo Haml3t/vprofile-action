@@ -67,8 +67,8 @@ jobs:
           registry: 194514256343.dkr.ecr.us-east-1.amazonaws.com
           repo: ${{ env.ECR_REPOSITORY }}
           region: ${{ env.AWS_REGION }}
-          tags: latest,${{ github.run-number }}
-          # tags: latest
+          # tags: latest,${{ github.run-number }}
+          tags: latest
           daemon_off: false
           dockerfile: ./Dockerfile
           context: ./
