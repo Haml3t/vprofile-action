@@ -69,7 +69,8 @@ jobs:
           # repo: ${{ env.ECR_REPOSITORY }}
           repo: testdubstep
           region: ${{ env.AWS_REGION }}
-          tags: latest,${{ github.run-number }}
+          # tags: latest,${{ github.run-number }}
+          tags: latest
           daemon_off: false
           dockerfile: ./Dockerfile
           context: ./
